@@ -1,0 +1,18 @@
+1. how trees split into branches (method)
+2. does always we can split only into 2 braches
+8. Which of the following techniques can be used to deal with overfitting of neural networks?
+Dropout
+Regularization
+Hard Negative Mining
+Batch Normalization
+None of these
+11. Which of the following cross validation techniques are more suitable for time series data?
+k-Fold Cross Validation
+Leave-one-out Cross Validation
+Stratified Shuffle Split Cross Validation
+Forward Chaining Cross Validation
+Random permutation cross-validator
+12. What is the difference between modern one-stage and two-stage object detection systems?
+13. Selection bias
+    Under coverage bias
+    Survivorship bias

@@ -1,0 +1,28 @@
+1. Activation function (neural network)
+2. RandomForestClassifier/Regressor
+3. GradientBoostingClassifier/regressor
+4. K-means
+6. SVM
+9. PCA
+10. metrics for each sphere
+(Mean Square Error
+Accuracy
+F1-Score
+R-squared
+Max absolute weight)
+11. polynomial priznaki
+1. Tf-Idf
+5. Grouping coctail party
+11. 'Linear regression based on X will have high bias and low variance'
+12. 
+'Dropout
+Regularization
+Hard Negative Mining
+Batch Normalization
+None of these'
+13.
+'Do you know any alternatives to the LDA (Latent Dirichlet allocation) and what is the difference between them?
+Can you propose any solution for cold start problem in recommender systems?
+What is the difference between modern one-stage and two-stage object detection systems?
+Why does the attention mechanism in sequence to sequence models get better performance? Does attention help encoder or decoder more?'
+14. One need to understand: where logistic regression is more acceptable than SVM. Or, when simple extrapolation is more effective than prediction methods, such as ARIMA or Holt-Winters.

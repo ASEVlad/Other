@@ -1,0 +1,33 @@
+    Clasifications
+sklearn.linear_model.Perceptron
+sklearn.svm.SVC
+sklearn.neighbors.KNeighborsClassifier
+sklearn.tree.DecisionTreeClassifier
+sklearn.linear_model.LogisticRegression
+sklearn.linear_model.SGDClassifier
+
+
+    Regresiion
+?sklearn.linear_model.Perceptron
+sklearn.linear_model.Ridge
+sklearn.ensemble.RandomForestRegressor
+GradientBoostingRegressor
+sklearn.linear_model.LinearRegression        metod naimenshyh kvadratov
+sklearn.tree.DecisionTreeRegressor
+sklearn.linear_model.SGDRegressor         
+
+    Clasterization
+sklearn.cluster.KMeans
+
+
+
+
+
+    Another
+PCA - getting a new fitch from few old
+sklearn.model_selection.train_test_split - split for train and test data
+StratifiedKFold
+KFold
+sklearn.preprocessing.PolynomialFeatures
+
+    Unknown
