@@ -1,0 +1,61 @@
+df[col].astype("float").mean(axis=0)
+-- return mean of column
+
+df.describe(include=['object'])
+-- describe with objects
+
+df[col].value_counts().idxmax()
+-- return the most common value in column
+
+bins = np.linspace(min(df["horsepower"]), max(df["horsepower"]), 4)
+group_names = ['Low', 'Medium', 'High']
+df['horsepower-binned'] = pd.cut(df['horsepower'], bins, labels=group_names, include_lowest=True )
+pyplot.bar(group_names, df["horsepower-binned"].value_counts())
+-- group by bins
+
+dummy_variable_1 = pd.get_dummies(df["fuel-type"])
+-- one_hot_encoder
+
+sns.regplot(x="engine-size", y="price", data=df)
+-- visual regression for 1 element
+
+df.corr()
+-- table of the correlation
+
+df_group_one = df_group_one.groupby(['drive-wheels'],as_index=False).mean()
+-- group by
+
+grouped_pivot = grouped_test1.pivot(index='drive-wheels',columns='body-style')
+-- intersection of 2 columns
+
+-------------------------------------------------------
+fig, ax = plt.subplots()
+im = ax.pcolor(grouped_pivot, cmap='RdBu')
+
+#label names
+row_labels = grouped_pivot.columns.levels[1]
+col_labels = grouped_pivot.index
+
+#move ticks and labels to the center
+ax.set_xticks(np.arange(grouped_pivot.shape[1]) + 0.5, minor=False)
+ax.set_yticks(np.arange(grouped_pivot.shape[0]) + 0.5, minor=False)
+
+#insert labels
+ax.set_xticklabels(row_labels, minor=False)
+ax.set_yticklabels(col_labels, minor=False)
+
+#rotate label if too long
+plt.xticks(rotation=90)
+
+fig.colorbar(im)
+plt.show()
+
+-- visual pivot
+--------------------------------------
+
+pearson_coef, p_value = stats.pearsonr(df['length'], df['price'])
+-- coef pirson
+
+grouped_test2=df_gptest[['drive-wheels', 'price']].groupby(['drive-wheels'])
+f_val, p_val = stats.f_oneway(grouped_test2.get_group('fwd')['price'], grouped_test2.get_group('rwd')['price'], grouped_test2.get_group('4wd')['price'])
+-- F-statistics between 2 different values (F-stat must be large)

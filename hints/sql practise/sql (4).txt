@@ -1,0 +1,20 @@
+http://sql-ex.ru/learn_exercises.php?LN=41
+CASE WHEN MAX(CASE WHEN price IS NULL THEN 1 ELSE 0 END) = 0
+        THEN MAX(price)
+   END
+-- return null for row if this row has at least one Null
+
+YEAR(date)
+-- return year of date
+
+SELECT CONVERT(NUMERIC(10,2), AVG(numGuns+0.0))
+-- return precision of two decimal places of int variable
+
+SELECT p1.maker, p2.type, 
+CAST( 100.0 * (SELECT COUNT(1) FROM product p WHERE p.maker = p1.maker AND p.type= p2.type) 
+/ 
+(SELECT COUNT(1) FROM product p WHERE p.maker = p1.maker) AS NUMERIC(12, 2)) 
+FROM product p1, product p2 
+GROUP BY p1.maker, p2.type
+-- return the percentage ratio of the number of models of the actual type produced by 
+-- the actual maker to the total number of models by this maker, with a precision of two decimal places
